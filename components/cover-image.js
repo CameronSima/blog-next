@@ -1,10 +1,10 @@
 import cn from 'classnames'
 import Link from 'next/link'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 export default function CoverImage({ title, src, slug, height, width }) {
   const image = (
-    <Image
+    <img
       src={src}
       alt={`Cover Image for ${title}`}
       className={cn('shadow-sm', {
@@ -22,8 +22,8 @@ export default function CoverImage({ title, src, slug, height, width }) {
           <a aria-label={title}>{image}</a>
         </Link>
       ) : (
-        image
-      )}
+          image
+        )}
     </div>
   )
 }

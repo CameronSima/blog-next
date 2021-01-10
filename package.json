@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "build:export": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
@@ -11,6 +12,8 @@
     "date-fns": "2.16.1",
     "gray-matter": "4.0.2",
     "next": "latest",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "remark": "13.0.0",
@@ -20,8 +23,12 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.3.1",
     "autoprefixer": "10.0.4",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^8.0.0",
     "postcss": "8.1.10",
     "postcss-preset-env": "^6.7.0",
+    "responsive-loader": "^2.3.0",
     "tailwindcss": "2.0.1"
   },
   "license": "MIT"
